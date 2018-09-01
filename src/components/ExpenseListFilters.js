@@ -36,8 +36,8 @@ export class ExpenseListFilters extends React.Component {
           value={this.props.filters.sortBy}
           onChange={this.onSortChange}
         >
-          <option value="date">Date</option>
-          <option value="amount">Amount</option>
+          <option value="date">Datum</option>
+          <option value="amount">Iznos</option>
         </select>
         <DateRangePicker
           startDate={this.props.filters.startDate}

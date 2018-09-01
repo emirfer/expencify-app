@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NotFoundPage = () => (
         <div>
-            404!.....Go to <Link to="/"> Home Page</Link>
+            404!.....Idite na <Link to="/"> Naslovnu Stranicu</Link>
         </div>
 );
 

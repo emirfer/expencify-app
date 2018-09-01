@@ -2,8 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from "react-dates";
 
-const now = moment();
-console.log(now.format('MMM Do, YYYY'));
+const now = moment.locale('bs');
+//console.log(now.format('MMM Do, YYYY'));
 
 export default class ExpenseForm extends React.Component {
     constructor(props){
@@ -60,14 +60,14 @@ export default class ExpenseForm extends React.Component {
                 <form onSubmit={this.onSubmit}>
                     <input
                         type="text"
-                        placeholder="Description"
+                        placeholder="Opis"
                         autoFocus
                         value={this.state.description}
                         onChange={this.onDescriptionChange}
                     />
                     <input
                         type="text"
-                        placeholder="Amount"
+                        placeholder="Iznos"
                         value={this.state.amount}
                         onChange={this.onAmountChange}
                     />
@@ -80,12 +80,12 @@ export default class ExpenseForm extends React.Component {
                         isOutsideRange={() => false}
                     />
                     <textarea
-                        placeholder="Add a note for your expense (optional)"
+                        placeholder="Dodaj zabilješku o svom trošku (neobavezno)"
                         value={this.state.note}
                         onChange={this.onNoteChange}
                     >
                     </textarea>
-                    <button>Add Expense</button>
+                    <button>Dodaj Trošak</button>
                 </form>
             </div>
         )

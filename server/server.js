@@ -14,3 +14,5 @@ app.listen(port, () => {
     console.log('Server is up!');
 });
 
+//https://app-troskovi.herokuapp.com/
+

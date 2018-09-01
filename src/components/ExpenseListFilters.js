@@ -40,6 +40,8 @@ export class ExpenseListFilters extends React.Component {
           <option value="amount">Iznos</option>
         </select>
         <DateRangePicker
+          startDatePlaceholderText="početak perioda"
+          endDatePlaceholderText="kraj perioda"
           startDate={this.props.filters.startDate}
           endDate={this.props.filters.endDate}
           onDatesChange={this.onDatesChange}
